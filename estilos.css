@@ -1,8 +1,19 @@
 
 .fondomovil{
 
-    background-image: url("img/foto3.jpg");
+    background-image: url("img/back.jpg");
     background-attachment: fixed;
     height: 450px;
+    width: 90%;
+    margin-left: 5%;
+    
+    
+
+}
+.icono{
+    color: yellow;
+    font-size: 30px;
+    margin-right: 10px;
+    
 
 }
