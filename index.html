@@ -85,7 +85,7 @@
       </div>
       <div class="offcanvas-body">
 
-        <form>
+        <form id="formularioRegistro">
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Correo</label>
             <input type="text" class="form-control" id="correo" value="">
@@ -94,7 +94,7 @@
             <label for="exampleInputPassword1" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" value="">
           </div>
-          <button type="submit" class="btn btn-primary" id="registro"data-bs-dismiss="form">Enviar</button>
+          <button type="submit" class="btn btn-primary" id="registro" data-bs-dismiss="form">Enviar</button>
         </form>
       </div>
     </div>
@@ -131,6 +131,26 @@
     </div>
     <!-- Copyright -->
   </footer>
+  <section>
+    <!-- Modal -->
+    <div class="modal fade" id="modalInformativo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tienda Tecnologica</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="informacioGeneral"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="js/registro.js" type="module"></script>
   <script src="js/firebase.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

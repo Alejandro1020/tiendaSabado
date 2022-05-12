@@ -59,7 +59,7 @@
     </nav>
 
   </header>
-  <section><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum alias nobis perspiciatis nisi. Corporis quibusdam at vel culpa atque harum officiis repellendus ad minima sunt reprehenderit tempore, explicabo nemo aliquam iste in repellat rem consequuntur autem excepturi similique dolores unde voluptatibus. Iusto quia id sint ullam error, provident non animi aut, assumenda earum iste blanditiis illo deserunt excepturi? Quaerat sint maxime nisi amet. Obcaecati deserunt veniam dolorem autem amet explicabo rem pariatur modi perspiciatis ex. Asperiores, consequatur necessitatibus! Minima numquam quis voluptatum delectus ullam officiis eveniet cumque repellendus commodi inventore est accusantium saepe, veritatis enim neque suscipit illum, a corrupti?</p></section>
+  <section><p></p></section>
   <main>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-4 g-3" id="fila">
@@ -84,13 +84,22 @@
 
                 </div>
                 <div class="col-4">
-                  <h3 class="text-center" id="nombreinfo"></h3>
+                  <h3 class="text-center" id="nombreinfo"  style="float: left;" ></h3>
                 </div>
 
                 <div class="col-4">
 
-                  <h4 class="text-center " id="preproducto"></h4>
+                  <h4 class="text-center " id="preproducto" style="float: left;"></h4>
 
+                </div>
+                <div>
+                  <h4 class="text-center" id="cantidad" ></h4>
+                </div>
+                <div>
+                  <h4 class="text-center" id="subtotal"></h4>
+                </div>
+                <div>
+                  <h4 class="text-center" id="total"></h4>
                 </div>
 
                 <div class="mb-3">
@@ -105,7 +114,7 @@
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="1" recet>Cerrar</button>
             <button id="btnAdd" type="button" class="btn btn-warning " data-bs-dismiss="modal">Agregar al
               carrito</button>
-            <button id="btnlimpiar" type="button" class="btn btn-warning">Limpiar</button>
+           
           </div>
         </div>
       </div>
@@ -127,7 +136,8 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Comprar</button>
+            <button type="button" class="btn btn-primary" >Comprar</button>
+            <button id="btnlimpiar" type="button" class="btn btn-warning"  data-bs-dismiss="modal">Limpiar</button>
           </div>
         </div>
       </div>

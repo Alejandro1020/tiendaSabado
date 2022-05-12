@@ -42,8 +42,17 @@ boton.addEventListener('click',function(evento){
     producto.cantidad=cantidad
     console.log(producto)
 
+    // se agrega el subtotal
+
+    producto.subtotal=producto.cantidad*producto.precio
+
+    producto.total=producto.subtotal
+
+
     //3. agregar el producto al carrito
     carrito.push(producto)
+
+    console.log(carrito)
     
     // 4 calculo la sumatoria de cantidades
 
@@ -72,8 +81,15 @@ boton.addEventListener('click',function(evento){
   
 })
 
-// let limpiarCarro=document.getElementById("btnlimpiar")
-// limpiarCarro.addEventListener("click", function(evento))
+ let limpiarCarro=document.getElementById("btnlimpiar")
+ limpiarCarro.addEventListener("click", function(evento){
+    carrito= []
+    capsula.textContent=carrito.cantidad
+    capsula.classList.add("invisible")
+    modalInfoProducto.hide()
+
+ })
+
 
 
 
@@ -104,6 +120,10 @@ botonCarrito.addEventListener("click",function(evento){
 
         let columna2=document.createElement("div")
         columna2.classList.add("col-12","col-md-8")
+
+        let columna3=document.createElement("div")
+        columna3.classList.add("col-12","col-md-8")
+      
        
 
       
@@ -114,27 +134,49 @@ botonCarrito.addEventListener("click",function(evento){
         foto.classList.add("img-fluid","w-100")
         foto.src=producto.foto
 
-        let nombre=document.createElement("nombreinfo")
+        let nombre=document.createElement("h4")
         nombre.textContent=producto.nombre
        
-        let precio=document.createElement("preproducto")
+        let precio=document.createElement("h4")
         precio.textContent=producto.precio
+
+        let cantidad=document.createElement("h4")
+        cantidad.textContent=producto.cantidad
+
         
 
+      
+        let subtotal=document.createElement("h4")
+        subtotal.textContent=producto.subtotal
+        
+        
+
+        let total =document.createElement("h4")
+
+        total.textContent=producto.total
 
         // gerarquia  padres e hijos
 
         columna1.appendChild(foto)
 
+        columna2.appendChild(nombre)
+        columna2.appendChild(precio)
+        columna2.appendChild(cantidad)
+        columna2.appendChild(subtotal)
+        columna2.appendChild(total)
+        
+
         fila.appendChild(columna1)
         fila.appendChild(columna2)
+
+        
+        
       
 
         contenedor.appendChild(fila)  
         
-        columna2.appendChild(nombre)
-        columna2.appendChild(precio)
-
+      
+        
         
         
         

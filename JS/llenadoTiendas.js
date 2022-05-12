@@ -15,6 +15,7 @@ let productos=[
     {nombre:"Procesador",precio:600000,foto:"img/procesador.jpg",descripcion:"Procesador ryzen "},
     {nombre:"Tarjeta grafica",precio:1200000,foto:"img/tarjeta.jpg",descripcion:"Tarjeta grafica 7800"},
     {nombre:"Discos solidos",precio:210000,foto:"img/ssd.jpg",descripcion:"Disco de estado solido"}
+    
 
 ]
 
